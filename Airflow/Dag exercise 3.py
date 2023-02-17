@@ -16,7 +16,7 @@ def get_data():
     r = requests.get(url)
     try:
         data = r.json()
-        path ="C:/Users/S3 Audio Visual/testtData_center/Data_lake"
+        path ="C:/Users/S3 Audio Visual/testt/Data_center/Data_lake"
         with open(path + "stock_market_raw_data" + "IBM" + str(time.time()), "w") as outfile:
             json.dump(data, outfile)
     except:
